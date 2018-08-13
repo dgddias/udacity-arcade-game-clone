@@ -1,6 +1,17 @@
-frontend-nanodegree-arcade-game
+Udacity Classic Arcade Game
 ===============================
+Este clássico jogo possui a finalidade de fazer com que o Jogador atravesse a rua até a água sem que nenhum
+inimigo o atinja. Para jogar é simples, utilize as teclas `Direita, Esquerda, cima, baixo do seu teclado`.
+Os inimigos (Carrapatos) não podem atingir o seu personagem durante a atravessia. Caso a colisão ocorra, o jogo é reiniciado,
+caso atravesse a rua com sucesso, voce ganha o jogo e o mesmo é reiniciado.
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+**Como Jogar**
+
+_Clone o Projeto_
+    
+    $ [sudo] git clone git@github.com:dgddias/udacity-arcade-game-clone.git
+    
+_Abra o Jogo_
+
+    $ Arquivo index.html
