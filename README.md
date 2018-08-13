@@ -10,8 +10,9 @@ caso atravesse a rua com sucesso, voce ganha o jogo e o mesmo é reiniciado.
 
 _Clone o Projeto_
     
-    $ [sudo] git clone git@github.com:dgddias/udacity-arcade-game-clone.git
+    $ https://github.com/dgddias/udacity-arcade-game-clone.git
     
 _Abra o Jogo_
 
     $ Arquivo index.html
+
