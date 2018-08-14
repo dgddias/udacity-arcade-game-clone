@@ -1,10 +1,11 @@
 // Enemies our player must avoid
-var Enemy = function (x, y, velocidade) {
+var Enemy = function (x, y, velocidade,player) {
     // Variáveis ​​aplicadas a cada uma das nossas instâncias aqui,
     // nós fornecemos um para você começar
 
     // A imagem / sprite dos nossos inimigos, isso usa
     // um ajudante que fornecemos para carregar facilmente imagens
+    this.player = player;
     this.x = x;
     this.y = y;
     this.velocidade = velocidade;
@@ -43,14 +44,14 @@ Enemy.prototype.checkCollision = function(){
 
     // Verifica colisao:
     // fonte: https://developer.mozilla.org/en-US/docs/Games/Techniques/2D_collision_detection
-    var player_p = {x: player.x, y: player.y, width: 50, height: 40};
+    var player_p = {x: this.player.x, y: this.player.y, width: 50, height: 40};
     var enemy_e = {x: this.x, y: this.y, width: 60, height: 70};
 
     if (player_p.x < enemy_e.x + enemy_e.width &&
         player_p.x + player_p.width > enemy_e.x &&
         player_p.y < enemy_e.y + enemy_e.height &&
         player_p.height + player_p.y > enemy_e.y) {
-        player.playerReset();
+        this.player.playerReset();
 
     }
 
@@ -135,7 +136,7 @@ let player = new Player(200, 380, 50);
 let enemy;
 
 enemyMove.forEach(function (value) {
-    enemy = new Enemy(0, value, 100 + Math.floor(Math.random() * 512));
+    enemy = new Enemy(0, value, 100 + Math.floor(Math.random() * 512),player);
     allEnemies.push(enemy);
 });
 
